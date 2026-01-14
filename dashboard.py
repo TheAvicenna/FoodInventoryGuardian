@@ -129,7 +129,7 @@ if st.session_state['page'] == 'home':
     c1, c2, c3 = st.columns([1.5, 1, 1.5])
     with c2:
         if os.path.exists("logo.png"):
-            st.image("logo.png", use_container_width=True)
+            st.image("logo.png", width="stretch")
         else:
             st.markdown("<div style='text-align:center; font-size:80px;'>🛡️</div>", unsafe_allow_html=True)
 
